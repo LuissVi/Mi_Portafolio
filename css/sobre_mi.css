@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*estilos de la seccion Sobre mi*/
+.sobre_mi {
+    height: 100vh;
+    width: 80%;
+    position: fixed;
+    right: 0;
+    background-image: url(/img/banner.webp);
+    background-size: cover;
+    /* padding-top: 550px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    /*efecto acordeon*/
+    opacity: 0;
+    height: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+/*campo h2—CV*/
+.contCV {
+    width: 40%;
+    display: flex;
+    align-items: center;
+
+    padding: 15px;
+    background-color: #222;
+    border-radius: 15px;
+
+    position: relative;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    align-items: center;
+}
+
+.contCV h2 {
+    color: whitesmoke;
+    flex: 1;
+    align-items: center;
+}
+
+.contCV .linkCV {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.contCV a {
+    width: 40%;
+    text-decoration: none;
+    color: #222222;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 3px 7px;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+}
+
+.contCV:hover a {
+    width: 100%;
+}
+
+/*----------pseudo elementos al link------*/
+
+.contCV .link1 {
+    position: relative;
+}
+
+.contCV .link1:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.contCV .link2:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.contCV .link1::after {
+    content: "👍";
+    position: absolute;
+    top: 0px;
+    /* ajusta la posición */
+    right: 45px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.contCV .link1:hover:after {
+    opacity: 1;
+}
+
+.contCV .link2 {
+    position: relative;
+}
+
+.contCV .link2::after {
+    content: "👍";
+    position: absolute;
+    top: 0px;
+    /* ajusta la posición */
+    right: 45px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.contCV .link2:hover:after {
+    opacity: 1;
+}
+
+
+/* ----------------BORDE GIRATORIO ---------- */
+.contCV::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* asegura que sobresalga */
+    background-image: conic-gradient(cyan 0deg, transparent 130deg);
+    animation: rotar 3s linear infinite;
+}
+
+.contCV::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    /* crea el borde más delgado */
+    background-color: #222;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+/* Asegura que tu contenido quede arriba */
+.contCV * {
+
+    z-index: 2;
+}
+
+@keyframes rotar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*----------------------------------------------------------*/
+
+.sobre_mi figure {
+    width: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.8);
+    margin: 0;
+    position: absolute;
+    top: 42%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+}
+
+.foto img {
+    width: 100%;
+}
+
+.sobre_mi p {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1.5rem;
+    color: #222;
+    border-radius: 25px;
+    padding: 1rem;
+    text-align: center;
+    width: 70%;
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sobre_mi p:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transition: all 0.4s ease-in-out;
+}
+
+/*efecto acordeon en seccion Sobre mi*/
+#banner {
+    display: none;
+}
+
+#banner:checked~.sobre_mi {
+    opacity: 1;
+    height: 100vh;
+}
+
+/*Efecto desvanecimiento en foto*/
+@keyframes fadeInFigure {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+#banner:checked~.sobre_mi .foto {
+    animation: fadeInFigure 1s ease-out forwards;
+    animation-delay: 2s;
+    opacity: 0;
+}
+
+/*efecto entrada derecha de parrafo*/
+@keyframes enterRight {
+    from {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-50%, -50%);
+    }
+}
+
+#banner:checked~.sobre_mi p {
+    opacity: 0;
+    animation: enterRight 0.6s forwards ease-in-out;
+    animation-delay: 3s;
+
+}

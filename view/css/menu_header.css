@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu_header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #222;
+    color: whitesmoke;
+}
+
+.menu_header li {
+    list-style: none;
+    transition: all 0.4s ease-in-out;
+
+}
+
+/*before inicio*/
+.menu_header li a {
+    display: inline-block;
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 0 15px;
+    color: whitesmoke;
+    padding: 5px 15px;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    text-align: end;
+}
+
+.menu_header li a:active{
+    background-color:cyan;
+}
+/*width inicial de items*/
+.menu_header .inicio a{
+    width: 70px;
+}
+.menu_header .folder a{
+    width: 100px;
+}
+.menu_header .contacto a{
+    width: 90px;
+}
+
+/*hover-width inicio*/
+header:hover .inicio a {
+    width: 100px;
+}
+
+.menu_header .inicio a::before {
+    content: "⌂";
+    position: absolute;
+    font-size: 25px;
+    top: 50%;
+    /* coloca verticalmente al 50% del <a> */
+    transform: translateY(-50%);
+    left: 15px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+/*hover-width proyecto*/
+header:hover .folder a {
+    width: 130px;
+}
+
+/* muestra de iconos de links al hacer hover*/
+header:hover .inicio a::before, header:hover .folder a::before, header:hover .contacto a::before {
+    opacity: 1;
+}
+
+
+/*before proyectos*/
+
+.menu_header .folder a::before {
+    content: "🗄";
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    /* coloca verticalmente al 50% del <a> */
+    transform: translateY(-50%);
+    left: 15px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+/*before contacto*/
+
+.menu_header .contacto a::before {
+    content: "🖂";
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    /* coloca verticalmente al 50% del <a> */
+    transform: translateY(-50%);
+    left: 15px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+/*hover-width contacto*/
+header:hover .contacto a {
+    width: 130px;
+}
+/*-----sombra externa de los items del menu---*/
+.menu_header .contacto a:hover, .menu_header .folder a:hover, .menu_header .inicio a:hover{
+    /* background-color: #333; */
+    transform: scaleX(1.1);
+    box-shadow: 0px 4px 5px rgba(255, 255, 255, 0.8);
+    border-top: #222;
+}
