@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Protest+Guerrilla&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -8,16 +11,58 @@ body {
     background-color: whitesmoke;
 }
 
+main {
+    font-family: 'reboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/*-------------*/
 h1 {
-    width: 90%;
-    margin: auto;
+    /* width: 90%; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    letter-spacing: 0.5px;
 }
 
 h1::before {
     content: "📁";
-    padding-right: 10px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
 }
 
+/*checks-ver todo*/
+
+.checks {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+}
+
+.checks label {
+    position: relative;
+}
+
+.checks label input {
+    position: absolute;
+    width: 20px;
+    ;
+    height: 20px;
+    top: 50%;
+    margin-left: 10px;
+    transform: translateY(-50%);
+    accent-color: #4CAF50
+}
+
+/*--------------*/
 .contenedor-grid {
     width: 90%;
     margin: 2rem auto;
@@ -26,12 +71,15 @@ h1::before {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+/*------celda de proyecto--------*/
 .proyecto {
+    position: relative;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     padding: 1rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 2;
 }
 
 .proyecto:hover {
@@ -42,9 +90,10 @@ h1::before {
 .proyecto img {
     width: 100%;
     border-radius: 8px;
-    margin-bottom: 0.5rem;
+    /* margin-bottom: 0.5rem; */
 }
 
+/*links: codigo—online*/
 .proyecto-links {
     display: flex;
     justify-content: space-between;
@@ -64,10 +113,14 @@ h1::before {
     background-color: #555;
 }
 
+/*-----------------------------------*/
 footer {
     text-align: center;
     background-color: #222;
     padding: 1rem;
+    font-family: 'Pacifico', cursive;
+    
+    letter-spacing: 1px;
 }
 
 footer .menu_footer {
@@ -79,6 +132,70 @@ footer .menu_footer {
 
 footer p {
     color: whitesmoke;
-
 }
 
+/*-----capa-imagen candado del proyecto------*/
+
+.overlay-proyecto {
+    /* width: 100%; */
+    /* background: #f5f5f5; */
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0s;
+}
+
+.overlay-proyecto img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    /* width: 100%; */
+    /* margin-bottom: .5rem; */
+}
+
+/*checkbox activos de imagen folder*/
+#p1:checked+.overlay-proyecto {
+    transform: scale(0.09);
+    inset: 0;
+    transform-origin: top right;
+}
+
+.img_proyecto {
+    transition: 0.7s ease-in-out;
+    opacity: 0;
+}
+
+#p1:checked~.img_proyecto,
+#p2:checked~.img_proyecto,
+#p3:checked~.img_proyecto,
+#p4:checked~.img_proyecto,
+#p5:checked~.img_proyecto {
+    opacity: 1;
+}
+
+#p2:checked+.overlay-proyecto {
+    transform: scale(0.09);
+    inset: 0;
+    transform-origin: top right;
+}
+
+#p3:checked+.overlay-proyecto {
+    transform: scale(0.09);
+    inset: 0;
+    transform-origin: top right;
+}
+
+#p4:checked+.overlay-proyecto {
+    transform: scale(0.09);
+    inset: 0;
+    transform-origin: top right;
+}
+
+#p5:checked+.overlay-proyecto {
+    transform: scale(0.09);
+    inset: 0;
+    transform-origin: top right;
+    transition-delay: 0s;
+}

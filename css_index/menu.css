@@ -1,26 +1,29 @@
 /*transformacion de icono*/
-#key:checked ~ .click > :nth-child(1){
+#key:checked~.click> :nth-child(1) {
     transform: translateY(10px) rotate(45deg);
     background-color: rgb(244, 129, 148);
 }
 
-#key:checked ~ .click > :nth-child(2){
+#key:checked~.click> :nth-child(2) {
     opacity: 0;
     transform: scaleX(0);
     height: 0;
     margin: 0;
     /* visibility: hidden; */
 }
-#key:checked ~ .click > :nth-child(3){
+
+#key:checked~.click> :nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
     background-color: rgb(244, 129, 148);
 
 }
+
 /*efecto acordeon del menu(icono)*/
-#key{
+#key {
     display: none;
 }
-.click{
+
+.click {
     display: flex;
     flex-direction: column;
     gap: 3px;
@@ -28,23 +31,40 @@
     justify-content: center;
     align-items: center;
 }
-.click span{
+
+.click span {
     padding: 3px;
     width: 30px;
     background-color: skyblue;
     border-radius: 5px;
     transition: transform 0.4s ease-in, opacity 0.3s ease;
 }
-.click:active span{
+
+.click:active span {
     background-color: white;
 }
-.menu{
+
+.menu {
     opacity: 0;
     height: 0;
     overflow: hidden;
     transition: all 0.4s ease-in;
 }
-#key:checked ~ .cont-menu .menu{
-   opacity: 1;
-   height: 150px;
+
+#key:checked~.cont-menu .menu {
+    opacity: 1;
+    height: 150px;
+}
+
+
+@media (max-width: 420px) {
+/*margen: h1 e ícono*/
+    /* .click{
+        float: right;
+    }
+    /*altura del menu-movil*/
+  /* #key:checked~.cont-menu .menu {
+    height: 60px;
+}   */ 
+
 }

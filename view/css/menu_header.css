@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&family=Protest+Guerrilla&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +19,6 @@
 .menu_header li {
     list-style: none;
     transition: all 0.4s ease-in-out;
-
 }
 
 /*before inicio*/
@@ -32,32 +33,48 @@
     position: relative;
     transition: all 0.4s ease-in-out;
     text-align: end;
+    font-family: 'Quantico', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
-.menu_header li a:active{
-    background-color:cyan;
+.menu_header li a:active {
+    background-color: cyan;
 }
+/*item activo*/
+header .menu_header li .act1{
+color: cyan;
+font-weight: bold;
+}
+header .menu_header li.act2 a {
+color: cyan;
+font-weight: bold;
+}
+
 /*width inicial de items*/
-.menu_header .inicio a{
-    width: 70px;
-}
-.menu_header .folder a{
-    width: 100px;
-}
-.menu_header .contacto a{
+.menu_header .inicio a {
     width: 90px;
+    position: relative;
+}
+
+.menu_header .folder a {
+    width: 130px;
+}
+
+.menu_header .contacto a {
+    width: 120px;
 }
 
 /*hover-width inicio*/
-header:hover .inicio a {
-    width: 100px;
+.menu_header:hover .inicio a {
+    width: 110px;
 }
 
 .menu_header .inicio a::before {
     content: "⌂";
     position: absolute;
     font-size: 25px;
-    top: 50%;
+    top: 45%;
     /* coloca verticalmente al 50% del <a> */
     transform: translateY(-50%);
     left: 15px;
@@ -65,18 +82,20 @@ header:hover .inicio a {
     transition: all 0.4s ease-in-out;
 }
 
-/*hover-width proyecto*/
-header:hover .folder a {
-    width: 130px;
-}
-
 /* muestra de iconos de links al hacer hover*/
-header:hover .inicio a::before, header:hover .folder a::before, header:hover .contacto a::before {
+.menu_header:hover .inicio a::before,
+.menu_header:hover .folder a::before,
+.menu_header:hover .contacto a::before {
     opacity: 1;
 }
 
 
 /*before proyectos*/
+
+/*hover-width proyecto*/
+.menu_header:hover .folder a {
+    width: 155px;
+}
 
 .menu_header .folder a::before {
     content: "🗄";
@@ -103,14 +122,20 @@ header:hover .inicio a::before, header:hover .folder a::before, header:hover .co
     opacity: 0;
     transition: all 0.4s ease-in-out;
 }
+
 /*hover-width contacto*/
-header:hover .contacto a {
-    width: 130px;
+.menu_header:hover .contacto a {
+    width: 155px;
 }
+
 /*-----sombra externa de los items del menu---*/
-.menu_header .contacto a:hover, .menu_header .folder a:hover, .menu_header .inicio a:hover{
+.menu_header .contacto a:hover,
+.menu_header .folder a:hover,
+.menu_header .inicio a:hover {
     /* background-color: #333; */
     transform: scaleX(1.1);
     box-shadow: 0px 4px 5px rgba(255, 255, 255, 0.8);
     border-top: #222;
+    background-color: rgb(40, 13, 13);
+
 }

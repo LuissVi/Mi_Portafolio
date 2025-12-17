@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width:420px) {
+    .contCV:hover a {
+        width: 100%;
+        text-align: start;
+    }
+
+    .contCV .link1::after,
+    .contCV .link2::after {
+        right: 10px;
+    }
+}
+
+@media (max-width:720px) {
+
+    /*seccion header*/
+    header {
+        left: 0;
+        padding: 0;
+        width: 100%;
+        display: inline-block;
+        top: 0;
+    }
+
+    header h1 {
+        width: fit-content;
+        display: inline-block;
+        margin-left: 1rem;
+    }
+
+    /*contenedor del menu*/
+    header .cont-menu {
+        margin-top: 0;
+    }
+
+    header .menu {
+        flex-direction: row;
+        padding: 0 3px;
+        width: 90%;
+        margin: auto;
+        border-radius: 10px;
+
+    }
+
+    /*animacion acordeon del menu*/
+    #key:checked~.cont-menu .menu {
+        opacity: 1;
+        height: 60px;
+    }
+
+    /*icono del menu movil*/
+    .click {
+        float: right;
+        margin-right: 5px;
+    }
+
+    /*-----------------------------------*/
+    /*contenedor CV*/
+    .contCV {
+        max-width: 85%;
+        gap: 0.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+        top: 4%;
+    }
+
+    .contCV a {
+        transition: all 0.6s ease-in-out;
+    }
+
+    .contCV:hover a {
+        width: 100%;
+        /* text-align: start; */
+    }
+
+    .contCV h2 {
+        display: none;
+    }
+
+    .contCV .linkCV {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+     .contCV .link1::after,
+    .contCV .link2::after {
+        right:10px ;
+    } 
+
+    /*--------------------------------*/
+    /*contenedor de imagen(figure)*/
+    .sobre_mi figure {
+        width: 40%;
+    }
+
+    /*desvanecer figure—entrada*/
+    @keyframes fadeInOut {
+        0% {
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0);
+        }
+
+        10% {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        80% {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        100% {
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0);
+        }
+    }
+
+    /* Aplicar la animación cuando el checkbox está marcado */
+    #banner:checked~.sobre_mi .foto {
+        animation: fadeInOut 9s ease-out forwards;
+        animation-delay: 2s;
+    }
+
+    /*------------------------------------*/
+    /*pag seccion-sobre mi*/
+    .sobre_mi {
+        width: 100%;
+        top: 8rem;
+    }
+
+    /*bloque párrafo sobre-mi*/
+    .sobre_mi p {
+        width: 90%;
+        font-size: 1rem;
+        letter-spacing: .5px;
+        bottom: 6rem;
+    }
+
+    /*------footer(oculto)—seccion—sobre-mi----*/
+    footer {
+        width: 100%;
+        position: relative;
+        display: none;
+        bottom: 0;
+        margin-top: 8rem;
+    }
+
+    /*Mostramos el footer*/
+    #banner:checked~footer {
+        display: block;
+    }
+
+    footer .menu_footer {
+        margin: 0;
+        justify-content: space-evenly;
+        gap: 5px;
+    }
+
+    .menu_footer li {
+        width: 30%;
+    }
+
+    .menu_footer li img {
+        width: 100%;
+    }
+
+}
+
+/*tablets*/
+@media (min-width: 721px) and (max-width: 1024px) { 
+
+     /*pag seccion-sobre mi*/
+    .sobre_mi {
+        width: 75%;
+    }
+     /*seccion header*/
+    header {
+        left: 0;
+        padding: 0;
+        /* width: 100%; */
+        /* display: inline-block; */
+        top: 0;
+        left: 1rem;
+    }
+     header h1 {
+     }
+      /*-----------------------------------*/
+    /*contenedor CV*/
+    .contCV {
+        max-width: 90%;
+        /* gap: 0.5rem; */
+        position: ;
+         flex-direction: row;
+        align-items: center; 
+        top: 5%;
+    }
+    .contCV .linkCV {
+        flex: 3;
+        flex-direction: row;
+        justify-content: space-evenly;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .contCV a {
+        transition: all 0.6s ease-in-out;
+    }
+    .contCV h2{
+        flex: 1;
+        /* width: fit-content; */
+    }
+
+    .contCV .link1::after,
+    .contCV .link2::after {
+        right:7px ;
+    } 
+     /*------------------------------------*/
+   
+    /*----------------------*/
+    
+    /*bloque párrafo sobre-mi*/
+    .sobre_mi p {
+        width: 90%;
+        font-size: 1.2rem;
+        letter-spacing: .5px;
+        bottom: 8rem;
+    }
+    /*footer*/
+    footer{
+        margin-top: ;
+    }
+}
+

@@ -7,75 +7,115 @@
     <title>Proyectos-Luis</title>
     <link rel="stylesheet" href="css/proyectos.css">
     <link rel="stylesheet" href="css/menu_header.css">
+    <link rel="stylesheet" href="css/fadeInProyect.css">
+
 </head>
 
-<body>
+<body class="fade">
+    <input type="checkbox" id="check_total" hidden>
     <header>
         <ul class="menu_header">
-            <li class="inicio"><a href="#">Inicio</a></li>
-            <li class="folder"><a href="#">Proyectos</a></li>
-            <li class="contacto"><a href="#">Contacto</a></li>
+            <li class="inicio itm act1"><a href="../index.html">Inicio</a></li>
+            <li class="folder itm act2"><a href="#">Proyectos</a></li>
+            <li class="contacto itm"><a href="#">Contacto</a></li>
         </ul>
+        <div class="checks">
+            <h1>Mis proyectos</h1>
+            <label for="check_total">Ver Todos</label>
+        </div>
     </header>
 
-    <h1>Mis proyectos</h1>
     <main class="contenedor-grid">
-        <div class="proyecto">
-            <img src="/img/crud.PNG" alt="Proyecto 1">
-            <h2>Proyecto Restaurante</h2>
-            <p>Gestión de reservas con panel administrativo y diseño responsivo.</p>
-            <div class="proyecto-links">
-                <a href="#" target="_blank">Código</a>
-                <a href="#" target="_blank">Ver online</a>
+        <section class="proyecto">
+            <input type="checkbox" id="p1" style="display: none;">
+            <label for="p1" class="overlay-proyecto">
+                <img src="/img/folder.png" alt="folder">
+            </label>
+            <div class="img_proyecto">
+                <img src="/img/crud.PNG" alt="Proyecto 1">
+                <h2>Proyecto Restaurante</h2>
+                <p>Gestión de reservas con panel administrativo y diseño responsivo.</p>
+                <div class="proyecto-links">
+                    <a href="#" target="_blank">Código</a>
+                    <a href="www.google.com" target="_blank">Ver online</a>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="proyecto">
-            <img src="/img/calendario.PNG" alt="Proyecto 2">
-            <h2>Calendario Dinámico</h2>
-            <p>Insertar, mostrar y eliminar eventos con almacenamiento local.</p>
-            <div class="proyecto-links">
-                <a href="#" target="_blank">Código</a>
-                <a href="#" target="_blank">Ver online</a>
+        <section class="proyecto">
+            <input type="checkbox" id="p2" hidden>
+            <label for="p2" class="overlay-proyecto">
+                <img src="/img/folder.png" alt="folder">
+            </label>
+            <div class="img_proyecto">
+                <img src="/img/calendario.PNG" alt="Proyecto 2">
+                <h2>Calendario Dinámico</h2>
+                <p>Insertar, mostrar y eliminar eventos con almacenamiento local.</p>
+                <div class="proyecto-links">
+                    <a href="#" target="_blank">Código</a>
+                    <a href="#" target="_blank">Ver online</a>
+                </div>
             </div>
-        </div>
-        <div class="proyecto">
-            <img src="/img/poke.PNG" alt="Proyecto 2">
-            <h2>Calendario Dinámico</h2>
-            <p>Insertar, mostrar y eliminar eventos con almacenamiento local.</p>
-            <div class="proyecto-links">
-                <a href="#" target="_blank">Código</a>
-                <a href="#" target="_blank">Ver online</a>
+        </section>
+
+        <section class="proyecto">
+            <input type="checkbox" id="p3" hidden>
+            <label for="p3" class="overlay-proyecto">
+                <img src="/img/folder.png" alt="folder">
+            </label>
+            <div class="img_proyecto">
+                <img src="/img/poke.PNG" alt="Proyecto 3">
+                <h2>Calendario Dinámico</h2>
+                <p>Insertar, mostrar y eliminar eventos con almacenamiento local.</p>
+                <div class="proyecto-links">
+                    <a href="#" target="_blank">Código</a>
+                    <a href="#" target="_blank">Ver online</a>
+                </div>
             </div>
-        </div>
-        <div class="proyecto">
-            <img src="/img/calculadora.PNG" alt="Proyecto 2">
-            <h2>Calendario Dinámico</h2>
-            <p>Insertar, mostrar y eliminar eventos con almacenamiento local.</p>
-            <div class="proyecto-links">
-                <a href="#" target="_blank">Código</a>
-                <a href="#" target="_blank">Ver online</a>
+        </section>
+
+        <section class="proyecto">
+            <input type="checkbox" id="p4" hidden>
+            <label for="p4" class="overlay-proyecto">
+                <img src="/img/folder.png" alt="folder">
+            </label>
+            <div class="img_proyecto">
+                <img src="/img/calculadora.PNG" alt="Proyecto 4">
+                <h2>Calendario Dinámico</h2>
+                <p>Insertar, mostrar y eliminar eventos con almacenamiento local.</p>
+                <div class="proyecto-links">
+                    <a href="#" target="_blank">Código</a>
+                    <a href="#" target="_blank">Ver online</a>
+                </div>
             </div>
-        </div>
-        <div class="proyecto">
-            <img src="/img/webRest.png" alt="Proyecto 2">
-            <h2>Calendario Dinámico</h2>
-            <p>Insertar, mostrar y eliminar eventos con almacenamiento local.</p>
-            <div class="proyecto-links">
-                <a href="#" target="_blank">Código</a>
-                <a href="#" target="_blank">Ver online</a>
+        </section>
+
+        <section class="proyecto">
+            <input type="checkbox" id="p5" hidden>
+            <label for="p5" class="overlay-proyecto">
+                <img src="/img/folder.png" alt="folder">
+            </label>
+            <div class="img_proyecto">
+                <img src="/img/webRest.png" alt="Proyecto 5">
+                <h2>Calendario Dinámico</h2>
+                <p>Insertar, mostrar y eliminar eventos con almacenamiento local.</p>
+                <div class="proyecto-links">
+                    <a href="#" target="_blank">Código</a>
+                    <a href="#" target="_blank">Ver online</a>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
         <ul class="menu_footer">
             <li>
-                <a href="https://www.linkedin.com/in/luis-villar-9238a025b/" title="visitar mi perfil de LinkedIn" target="_blank"><img src="/img/linkedin.jpg" alt="linkedin"></a>
+                <a href="https://www.linkedin.com/in/luis-villar-9238a025b/" title="visitar mi perfil de LinkedIn"
+                    target="_blank"><img src="/img/linkedin.jpg" alt="linkedin"></a>
             </li>
             <li>
-                <a href="https://github.com/LuissVi/" title="visitar GitHub" target="_blank"><img
-                        src="/img/github.png" alt=""></a>
+                <a href="https://github.com/LuissVi/" title="visitar GitHub" target="_blank"><img src="/img/github.png"
+                        alt=""></a>
             </li>
             <li>
                 <a href="mailto:luisitex@gmail.com" title="Enviar correo a luisitex@gmail.com">
@@ -84,6 +124,7 @@
         </ul>
         <p>© 2024 Luis Villar | luisitex2085@gmail.com</p>
     </footer>
+    <script src="proyectos.js"></script>
 </body>
 
 </html>

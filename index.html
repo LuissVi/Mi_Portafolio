@@ -5,48 +5,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/sobre_mi.css">
+    <link rel="stylesheet" href="css_index/style.css">
+    <link rel="stylesheet" href="css_index/menu.css">
+    <link rel="stylesheet" href="css_index/sobre_mi.css">
+    <link rel="stylesheet" href="css_index/media_query.css">
+    <link rel="stylesheet" href="view/css/fadeInProyect.css">
 </head>
-<body>
-    <main>
-        <video autoplay muted loop class="video-fondo">
-            <source src="img/fondo_dinamico.mp4" type="video/mp4">
-        </video>
-        <input type="checkbox" id="banner">
-        <section class="sobre_mi">
-            <div class="contCV">
-                <h2>Sobre mí</h2>
-                    <div class="linkCV">
-                        <a href="#" class="link1">Descargar CV</a>
-                        <a href="#" class="link2">Ver CV Online</a>
-                    </div>
+
+<body class="fade">
+
+    <video autoplay muted loop class="video-fondo">
+        <source src="img/fondo_dinamico.mp4" type="video/mp4">
+    </video>
+    <input type="checkbox" id="banner">
+    <section class="sobre_mi">
+        <div class="contCV">
+            <h2>Sobre mí</h2>
+            <div class="linkCV">
+                <a href="docs/LUIS-CV-2025.pdf" download="CV_LuisVillar" class="link1">Descargar CV</a>
+                <a href="docs/LUIS-CV-2025.pdf" target="_blank" class="link2">Ver CV Online</a>
             </div>
-            <figure class="foto">
-                <img src="img/fotoMio.jpeg" alt="Luis">
-            </figure>
-            <p>Soy un desarrollador web junior en formación, especializado en frontend y backend, con experiencia en
-                HTML, CSS, JavaScript, PHP y frameworks como Angular y Node.js. Busco aplicar mis conocimientos en
-                proyectos reales y seguir creciendo profesionalmente.</p>
-        </section>
-        <header>
-            <h1>Luis Villar</h1>
-            <input type="checkbox" id="key">
-            <label class="click" for="key" aria-label="abrir menu"><span></span><span></span><span></span></label>
-            <nav class="cont-menu">
+        </div>
+        <figure class="foto">
+            <img src="img/fotoMio.jpeg" alt="Luis">
+        </figure>
+        <p>Soy un desarrollador web junior en formación, especializado en frontend y backend, con experiencia en
+            HTML, CSS, JavaScript, PHP y frameworks como Angular y Node.js. Busco aplicar mis conocimientos en
+            proyectos reales y seguir creciendo profesionalmente.</p>
+    </section>
+    <header>
+        <h1>Luis Villar</h1>
+        <input type="checkbox" id="key">
+        <label class="click" for="key" aria-label="abrir menu"><span></span><span></span><span></span></label>
+        <nav class="cont-menu">
 
-                <ul class="menu">
-                    <li>
-                        <label for="banner" class="sm">Sobre mi</label>
-                    </li>
-                    <li>Proyectos</li>
-                    <li>Contacto</li>
-                </ul>
-            </nav>
-        </header>
-
-    </main>
+            <ul class="menu">
+                <li>
+                    <label for="banner" class="sm act1">Sobre Mí</label>
+                </li>
+                <li><a href="view/proyectos.html"  class="act2">Proyectos</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <footer>
+        <ul class="menu_footer">
+            <li>
+                <a href="https://github.com/LuissVi/" title="visitar GitHub" target="_blank"><img src="/img/github.png"
+                        alt=""></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/luis-villar-9238a025b/" title="visitar mi perfil de LinkedIn"
+                    target="_blank"><img src="img/linkedin.jpg" alt="linkedin"></a>
+            </li>
+            <li>
+                <a href="mailto:luisitex@gmail.com" title="Enviar correo a luisitex@gmail.com">
+                    <img src="/img/imgGmail.jpg" alt="correo"></a>
+            </li>
+        </ul>
+        <p>2024 Luis Villar | luisitex2085@gmail.com</p>
+    </footer>
 </body>
 
 </html>
