@@ -19,7 +19,6 @@ main {
 
 /*-------------*/
 h1 {
-    /* width: 90%; */
     position: relative;
     display: flex;
     align-items: center;
@@ -49,6 +48,11 @@ h1::before {
 
 .checks label {
     position: relative;
+    cursor: pointer;
+}
+
+.checks label:active {
+    color: cyan;
 }
 
 .checks label input {
@@ -90,7 +94,6 @@ h1::before {
 .proyecto img {
     width: 100%;
     border-radius: 8px;
-    /* margin-bottom: 0.5rem; */
 }
 
 /*links: codigo—online*/
@@ -119,7 +122,7 @@ footer {
     background-color: #222;
     padding: 1rem;
     font-family: 'Pacifico', cursive;
-    
+
     letter-spacing: 1px;
 }
 
@@ -137,8 +140,6 @@ footer p {
 /*-----capa-imagen candado del proyecto------*/
 
 .overlay-proyecto {
-    /* width: 100%; */
-    /* background: #f5f5f5; */
     position: absolute;
     inset: 0;
     z-index: 1;
@@ -151,8 +152,6 @@ footer p {
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
-    /* width: 100%; */
-    /* margin-bottom: .5rem; */
 }
 
 /*checkbox activos de imagen folder*/
@@ -198,4 +197,26 @@ footer p {
     inset: 0;
     transform-origin: top right;
     transition-delay: 0s;
+}
+
+@media (max-width:720px) {
+    footer {
+        width: 100%;
+    }
+
+    footer .menu_footer {
+        margin: 0;
+        justify-content: space-evenly;
+        gap: 5px;
+    }
+
+    .menu_footer li {
+        width: 30%;
+    }
+
+    .menu_footer li img {
+        width: 100%;
+    }
+
+
 }

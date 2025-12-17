@@ -91,10 +91,10 @@
         justify-content: space-around;
     }
 
-     .contCV .link1::after,
+    .contCV .link1::after,
     .contCV .link2::after {
-        right:10px ;
-    } 
+        right: 10px;
+    }
 
     /*--------------------------------*/
     /*contenedor de imagen(figure)*/
@@ -177,13 +177,14 @@
 }
 
 /*tablets*/
-@media (min-width: 721px) and (max-width: 1024px) { 
+@media (min-width: 721px) and (max-width: 1024px) {
 
-     /*pag seccion-sobre mi*/
+    /*pag seccion-sobre mi*/
     .sobre_mi {
         width: 75%;
     }
-     /*seccion header*/
+
+    /*seccion header*/
     header {
         left: 0;
         padding: 0;
@@ -192,18 +193,16 @@
         top: 0;
         left: 1rem;
     }
-     header h1 {
-     }
-      /*-----------------------------------*/
+
+    /*-----------------------------------*/
     /*contenedor CV*/
     .contCV {
         max-width: 90%;
-        /* gap: 0.5rem; */
-        position: ;
-         flex-direction: row;
-        align-items: center; 
+        flex-direction: row;
+        align-items: center;
         top: 5%;
     }
+
     .contCV .linkCV {
         flex: 3;
         flex-direction: row;
@@ -214,19 +213,19 @@
     .contCV a {
         transition: all 0.6s ease-in-out;
     }
-    .contCV h2{
+
+    .contCV h2 {
         flex: 1;
         /* width: fit-content; */
     }
 
     .contCV .link1::after,
     .contCV .link2::after {
-        right:7px ;
-    } 
-     /*------------------------------------*/
-   
-    /*----------------------*/
-    
+        right: 7px;
+    }
+
+    /*------------------------------------*/
+
     /*bloque párrafo sobre-mi*/
     .sobre_mi p {
         width: 90%;
@@ -234,9 +233,4 @@
         letter-spacing: .5px;
         bottom: 8rem;
     }
-    /*footer*/
-    footer{
-        margin-top: ;
-    }
 }
-

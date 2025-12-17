@@ -30,6 +30,7 @@
     margin-top: 1rem;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .click span {
@@ -57,14 +58,3 @@
 }
 
 
-@media (max-width: 420px) {
-/*margen: h1 e ícono*/
-    /* .click{
-        float: right;
-    }
-    /*altura del menu-movil*/
-  /* #key:checked~.cont-menu .menu {
-    height: 60px;
-}   */ 
-
-}
