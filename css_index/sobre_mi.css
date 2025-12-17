@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-/* body{
-    position: relative;
-} */
 /*estilos de la seccion Sobre mi*/
 .sobre_mi {
     height: 100vh;
@@ -16,11 +13,9 @@
     right: 0;
     background-image: url(/img/banner.webp);
     background-size: cover;
-    /* padding-top: 550px; */
     background-repeat: no-repeat;
     background-position: center;
     box-sizing: border-box;
-    /*efecto acordeon*/
     opacity: 0;
     height: 0;
     transition: all 0.5s ease-in-out;
@@ -28,7 +23,7 @@
 
 /*campo h2—CV*/
 .contCV {
-    max-width: 40%;
+    max-width: 45%;
     display: flex;
     align-items: center;
 
@@ -46,7 +41,6 @@
 .contCV h2 {
     width: 40%;
     color: whitesmoke;
-    /* align-items: center; */
     font-family: 'Quantico', sans-serif;
     letter-spacing: 1px;
 }
@@ -97,8 +91,7 @@
     content: "👍";
     position: absolute;
     top: 0px;
-    /* ajusta la posición */
-    right: 45px;
+    right: 25px;
     opacity: 0;
     transition: all 0.4s ease-in-out;
 }
@@ -115,7 +108,6 @@
     content: "";
     position: absolute;
     inset: 0;
-    /* asegura que sobresalga */
     background-image: conic-gradient(cyan 0deg, transparent 130deg);
     animation: rotar 3s linear infinite;
 }
@@ -124,7 +116,6 @@
     content: "";
     position: absolute;
     inset: 2px;
-    /* crea el borde más delgado */
     background-color: #222;
     border-radius: 15px;
     z-index: 1;
@@ -132,7 +123,6 @@
 
 /* Asegura que tu contenido quede arriba */
 .contCV * {
-
     z-index: 2;
 }
 
@@ -234,68 +224,3 @@ max-width: 70%;
 
 }
 
-/*--------mediaQuery-----------*/
-@media (max-width: 420px) {
-
-    /* heqader*/
-    /* header {
-        width: 100%;
-        /* background-color: red; */
-        /* position: relative;
-        color: white;
-        top: 0;
-        left: 0;
-        letter-spacing: .8px;
-        display: inline-block;
-        padding: .5rem; */
-   /* } */
-
-    /* .sobre_mi { */
-        /* top: 7rem; */
-        /* width: 100%; */
-        /* background-size: cover; */
-    
-
-    /*contenedor CV*/
-    /* .contCV {
-        max-width: 95%;
-        gap: 0.5rem;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .contCV .linkCV {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        gap: 7px;
-        align-items: center;
-        justify-content: space-around;
-    } */
-
-    /*ocultar like*/
-    /* .contCV .link1:hover:after,
-    .contCV .link2:hover:after {
-        opacity: 0;
-    } */
-
-    /* .sobre_mi figure {
-        width: 60%;
-    } */
-
-    /* .sobre_mi p {
-        width: 90%;
-        font-size: 1.2rem;
-        padding: 8px;
-        text-align: justify;
-        border-radius: 8px;
-
-      
-        
-        
-        position: absolute;
-        bottom: 7rem;
-        left: 50%;
-        transform: translateX(-50%);
-    } */
-}

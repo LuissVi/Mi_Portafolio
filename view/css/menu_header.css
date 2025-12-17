@@ -19,6 +19,7 @@
 .menu_header li {
     list-style: none;
     transition: all 0.4s ease-in-out;
+    
 }
 
 /*before inicio*/
@@ -63,6 +64,7 @@ font-weight: bold;
 
 .menu_header .contacto a {
     width: 120px;
+    text-decoration: line-through;
 }
 
 /*hover-width inicio*/
@@ -75,7 +77,6 @@ font-weight: bold;
     position: absolute;
     font-size: 25px;
     top: 45%;
-    /* coloca verticalmente al 50% del <a> */
     transform: translateY(-50%);
     left: 15px;
     opacity: 0;
@@ -90,7 +91,7 @@ font-weight: bold;
 }
 
 
-/*before proyectos*/
+/*-------before proyectos--------*/
 
 /*hover-width proyecto*/
 .menu_header:hover .folder a {
@@ -102,7 +103,6 @@ font-weight: bold;
     position: absolute;
     font-size: 20px;
     top: 50%;
-    /* coloca verticalmente al 50% del <a> */
     transform: translateY(-50%);
     left: 15px;
     opacity: 0;
@@ -116,7 +116,6 @@ font-weight: bold;
     position: absolute;
     font-size: 20px;
     top: 50%;
-    /* coloca verticalmente al 50% del <a> */
     transform: translateY(-50%);
     left: 15px;
     opacity: 0;
@@ -132,7 +131,6 @@ font-weight: bold;
 .menu_header .contacto a:hover,
 .menu_header .folder a:hover,
 .menu_header .inicio a:hover {
-    /* background-color: #333; */
     transform: scaleX(1.1);
     box-shadow: 0px 4px 5px rgba(255, 255, 255, 0.8);
     border-top: #222;
