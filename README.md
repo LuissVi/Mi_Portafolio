@@ -1,6 +1,8 @@
 # Mi Portafolio
 
-¡Bienvenido a mi portafolio! Mi nombre es Luis; estudiante de desarrollo Web y en este repositorio te muestro algunos de mis proyectos.
+¡Bienvenido a mi portafolio!  
+Mi nombre es Luis, soy estudiante de Desarrollo de Aplicaciones Web (DAW) y desarrollador web en formación.  
+En este repositorio muestro algunos de mis proyectos, donde aplico los conocimientos adquiridos en mis estudios y en cursos certificados.
 
 ## 🔗 Enlace al proyecto
 
@@ -25,16 +27,34 @@
     -Descripción:  *Es una calculadora creada con POO que realiza operaciones simples.
     -[Ver proyecto](http://crudlva.x10.mx/calculadora/)
 
+5. **Web Restaurante**
+    -Descripción:  *Es una web de restaurante con sistema de reserva e interfaz de vista de reservas.
+    -[Ver proyecto](http://lomio.42web.io/proyecto-web-reservas/)
+
+5. **Formulario con validación de campos**
+    -Descripción:  *Es un formulario que permite validar campos en tiempo real y habilitar secciones; al final muestra los datos o valores simulando envío a DB .
+    -[Ver proyecto](http://formulario-validacionesjs.netlify.app/)
+
+
 ## Contacto:
      A traves de:
 - **Correo**: [luisitex2085@gmail.com](mailto:luisitex2085@gmail.com)
 
 ## Tecnologías que uso:
-- *HTML*
-- *CSS*
-- *JavaScript*
-- *JQUERY*
-- *PHP*
+
+### Frontend
+- HTML
+- CSS
+- JavaScript
+- jQuery
+- TypeScript
+
+### Backend
+- PHP
+- Node.js
+
+### Base de datos
+- MySQL
 
 ---
 
