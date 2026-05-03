@@ -12,6 +12,7 @@ En este repositorio muestro algunos de mis proyectos personales, donde aplico co
 
 👉 [lva-portafolio.netlify.app](https://lva-portafolio.netlify.app)
 
+
 ## Proyectos:
 
 ### **CRUD DE CIUDADES**
@@ -24,9 +25,13 @@ Aplicación web que permite **crear, leer, actualizar y eliminar** registros de 
 - MySQL
 - JavaScript
 - HTML
-- CSS -[Ver proyecto](http://crudlva.x10.mx/pruebaApi/cliente/)
+- CSS 
 
-### 🔹 POKEDEX
+ 👉 [Ver proyecto](http://crudlva.x10.mx/pruebaApi/cliente/)
+
+---
+
+### 🔹 **POKEDEX**
 
 Aplicación web que consume una **API REST** para mostrar información de Pokémon, como imágenes y características principales.
 
@@ -35,7 +40,11 @@ Aplicación web que consume una **API REST** para mostrar información de Pokém
 - JavaScript
 - HTML
 - CSS
-- API REST -[Ver proyecto](http://pokemonlva.x10.mx/)
+- API REST 
+
+ 👉 [Ver proyecto](http://pokemonlva.x10.mx/)
+
+---
 
 ### **CALENDARIO DE EVENTOS**
 
@@ -46,7 +55,13 @@ Calendario interactivo que permite crear eventos y marcarlos por rangos de fecha
 - JavaScript
 - HTML
 - CSS
-- [Ver proyecto](http://crudlva.x10.mx/calendario/)
+
+ 👉 [Ver proyecto](http://crudlva.x10.mx/calendario/)
+
+ 🔗 [Repositorio GitHub](https://github.com/LuissVi/Calendario-Eventos-js?tab=readme-ov-file)
+
+
+---
 
 ### **CALCULADORA PHP (POO)**
 
@@ -54,7 +69,10 @@ Calculadora desarrollada aplicando **Programación Orientada a Objetos**, capaz 
 
 **Tecnologías:**  
  PHP (POO)  
- -[Ver proyecto](http://crudlva.x10.mx/calculadora/)
+
+ 👉 [Ver proyecto](http://crudlva.x10.mx/calculadora/)
+
+ ---
 
 ### **WEB DE RESTAURANTE CON SISTEMA DE RESERVAS**
 
@@ -66,8 +84,11 @@ Aplicación web completa con **sistema de reservas**, interfaz de visualización
 - MySQL
 - JavaScript
 - HTML
-- CSS  
-  -[Ver proyecto](http://lomio.42web.io/proyecto-web-reservas/)
+- CSS 
+
+ 👉 [Ver proyecto](http://lomio.42web.io/proyecto-web-reservas/)
+
+---
 
 ### **FORMULARIO CON VALIDACIÓN DE CAMPOS**
 
@@ -77,42 +98,43 @@ Formulario interactivo con **validación de campos en tiempo real**, habilitaci�
 -   JavaScript
 -   HTML
 -   CSS  
- -[Ver proyecto](http://formulario-validacionesjs.netlify.app/)
+
+ 👉 [Ver proyecto](http://formulario-validacionesjs.netlify.app/)
+
+ 🔗 [Repositorio GitHub](https://github.com/LuissVi/Formulario-validaciones-JS.git)
+
 
 ---
 
-### \*\*CALCULADORA EN TYPESCRIPT(ARQUITECTURA MVC)
+### **CALCULADORA EN TYPESCRIPT(ARQUITECTURA MVC)**
 
 Aplicación desarrollada en TypeScript, utilizando Node.js como entorno de desarrollo para la compilación y ejecución del proyecto siguiendo el patrón de arquitectura MVC y aplicando Programación Orientada a Objetos (POO) para la lógica de negocio, con una separación clara entre modelo, controladores y vista.
 
-**Tecnologías y conceptos:**
+## Tecnologías
 
 - TypeScript
 - Programación Orientada a Objetos (clases)
 - Patrón MVC
 - Node.js (entorno de desarrollo)
- -[Ver proyecto](https://calculadora-type-script.netlify.app/)
+
+ 👉 [Ver proyecto](https://calculadora-type-script.netlify.app/)
+
+ 🔗 [Repositorio GitHub](https://github.com/LuissVi/Calculadora-Type-Script.git/)
 
 ---
 
-## TECNOLOGÍAS
+## **TODO POO - MVC**
+Aplicación de lista de tareas desarrollada con JavaScript Vanilla. La aplicación sigue el patrón de diseño Modelo-Vista-Controlador (MVC).
 
-### Frontend
+## Tecnologías
 
 - HTML
 - CSS
 - JavaScript
-- TypeScript
-- jQuery
 
-### Backend
+👉 [Ver proyecto](https://calculadora-type-script.netlify.app/)
 
-- PHP
-- Node.js
-
-### Base de datos
-
-- MySQL
+ 🔗 [Repositorio GitHub](https://github.com/LuissVi/Calculadora-Type-Script.git)
 
 ---
 
@@ -138,4 +160,4 @@ Aplicación desarrollada en TypeScript, utilizando Node.js como entorno de desar
 ---
 
 ¡Gracias por visitar mi portafolio!
-Estoy abierto a **oportunidades como desarrollador web junior**, donde pueda seguir aprendiendo y aportar valor desde el primer día.
+Estoy abierto a **oportunidades como desarrollador web**, donde pueda seguir aprendiendo y aportar valor desde el primer día.

@@ -172,7 +172,8 @@ footer p {
 #p4:checked~.img_proyecto,
 #p5:checked~.img_proyecto,
 #p6:checked~.img_proyecto,
-#p7:checked~.img_proyecto {
+#p7:checked~.img_proyecto,
+#p8:checked~.img_proyecto {
     
     opacity: 1;
 }
@@ -212,6 +213,30 @@ footer p {
     inset: 0;
     transform-origin: top right;
     transition-delay: 0s;
+}
+
+#p8:checked+.overlay-proyecto {
+    transform: scale(0.09);
+    inset: 0;
+    transform-origin: top right;
+    transition-delay: 0s;
+}
+/*boton ver todos*/
+.verTodos{
+    border: 1px solid #000;
+    border-radius: 10px;
+    text-align: center;
+    padding: 3px 5px;
+    background-color: #dce2dc;
+    transition: transform 0.4s ease-in-out;
+}
+
+.verTodos:hover{
+    transform: scale(1.08);
+}
+
+.verTodos.cambio{
+    background-color: #a5f88f;
 }
 
 @media (max-width:720px) {

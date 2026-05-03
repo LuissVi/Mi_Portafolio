@@ -4,8 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const nodChecks = document.querySelectorAll(".proyecto input[type='checkbox']");
 
+    const verTodos=document.querySelector('.verTodos');
+
     btn_checkTotal.addEventListener("change", () => {
-      
+      verTodos.classList.toggle('cambio');
         nodChecks.forEach((check,index) => {
             setTimeout(() => {
                 check.checked = btn_checkTotal.checked;
